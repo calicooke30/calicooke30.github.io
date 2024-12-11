@@ -31,3 +31,22 @@ a:hover {
     background-color: #575B35;
     transition: background-color 0.5s ease;
 }
+
+section {
+    border: solid 4px #575B35;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 8px;
+    background-color: #dad7cd;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    margin: 2%;
+}
+
+.fakeimg {
+    background-color: #575B35;
+    padding: 50px;
+}
