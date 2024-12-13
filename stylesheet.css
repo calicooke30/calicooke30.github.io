@@ -60,7 +60,7 @@ section {
     justify-content: space-between;
     margin-bottom: 80px;
     font-size: large;
-    margin-left: 100px;
+    margin-left: 170px;
 }
 
 li {
@@ -76,7 +76,9 @@ li {
     max-width: 200px;
     max-height: 400px;
     min-width: 300px;
-    margin: 3%
+    margin: 3%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .slideshow-container img {
@@ -87,7 +89,19 @@ li {
 }
 
 @media screen and (max-width: 1000px) {
-    
+    section {
+        flex-direction: column;
+        font-size: medium;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: medium;
+    }
+
+    footer, header {
+        margin-left: 120px;
+    }
 }
 
 .prev, .next {
