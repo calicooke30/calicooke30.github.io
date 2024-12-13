@@ -24,19 +24,24 @@ h3 {
 nav {
     background-color: #717744;
     margin: 0%;
-    width: 100%;
+    margin-right: 20%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     font-size: larger;
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
 }
 
 nav a {
     padding: 20px;
-    padding-left: 60px;
-    padding-right: 60px;
     text-decoration: none;
     color: black;
     font-weight: bolder;
+    text-align: center;
+    margin: 10px;
 }
 
 a:hover {
@@ -55,10 +60,11 @@ section {
     justify-content: space-between;
     margin-bottom: 80px;
     font-size: large;
+    margin-left: 100px;
 }
 
 li {
-    margin: 2%;
+    margin: 4%;
 }
 
 .slideshow-container {
@@ -67,8 +73,8 @@ li {
     border: solid #575B35 4px;
     width: 80%;
     height: auto;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 200px;
+    max-height: 400px;
     min-width: 300px;
     margin: 3%
 }
@@ -78,6 +84,10 @@ li {
     width: 100%;
     border-radius: 10px;
     display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    
 }
 
 .prev, .next {
