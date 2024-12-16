@@ -2,6 +2,7 @@ body {
     background-color: #eff1ed;
     margin: 0%;
     font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -15,6 +16,8 @@ h1 {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BCBD8B", endColorstr="#6C7147", GradientType=1 );
     margin: 0%;
     padding: 3%;
+    border-bottom: solid 6px #575B35;
+    font-size: 40px;
 }
 
 h3 {
@@ -35,6 +38,24 @@ nav {
     left: 0;
 }
 
+.nav-patterns-top {
+    background-image: url('images/il_570xN.5076831108_nwhc.avif');
+    background-repeat: repeat-y;
+    height: 30%;
+    border: solid 3px #575B35;
+    margin: 6px;
+    border-radius: 7px;
+}
+
+.nav-patterns-bottom {
+    background-image: url('images/il_570xN.5076831108_nwhc.avif');
+    background-repeat: repeat-y;
+    height: 290%;
+    border: solid 3px #575B35;
+    margin: 6px;
+    border-radius: 7px;
+}
+
 nav a {
     padding: 20px;
     text-decoration: none;
@@ -42,6 +63,12 @@ nav a {
     font-weight: bolder;
     text-align: center;
     margin: 10px;
+}
+
+.divider {
+    border: solid #575B35 1px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 a:hover {
@@ -140,4 +167,52 @@ footer {
 
 .about {
     margin: 3%;
+}
+
+video {
+    border: solid 4px #575B35;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio {
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #252422;
+        color: #dad7cd;
+    }
+
+    h1 {
+        background: hsla(90, 19%, 31%, 1);
+        background: linear-gradient(90deg, hsla(90, 19%, 31%, 1) 0%, hsla(90, 20%, 20%, 1) 100%);
+        background: -moz-linear-gradient(90deg, hsla(90, 19%, 31%, 1) 0%, hsla(90, 20%, 20%, 1) 100%);
+        background: -webkit-linear-gradient(90deg, hsla(90, 19%, 31%, 1) 0%, hsla(90, 20%, 20%, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4E5D3F", endColorstr="#333D29", GradientType=1 );
+    }
+
+    nav, footer {
+        background-color: #333d29;
+    }
+
+    nav a {
+        color: #dad7cd;
+    }
+
+    .nav-patterns-bottom, .nav-patterns-top {
+        background-image: url("images/auguste-dark-green-floral-wallpaper-nkqe-l.jpg");
+        border-color: #465362;
+    }
+
+    .divider, h1, section, video, .slideshow-container {
+        border-color: #465362;
+    }
+
+    section {
+        background-color: #403d39;
+    }
 }
